@@ -1,0 +1,162 @@
+<blockquote>
+  <p>This document describes the steps required for the GIST pipeline. <br />
+It covers all steps from an initial dataset to a learned model.</p>
+</blockquote>
+
+<h2 id="steps">Steps</h2>
+<ol>
+  <li><strong>Init</strong>
+    <ul>
+      <li><strong>instantiate</strong>: a sentence dataset</li>
+    </ul>
+  </li>
+  <li><strong>Stanford parser</strong>
+    <ul>
+      <li><strong>input</strong>: sentence dataset</li>
+      <li><strong>output</strong>: text file of parses
+        <ul>
+          <li>usually dataset_parsed.txt</li>
+        </ul>
+      </li>
+      <li>other information:
+        <ul>
+          <li>most errors get introduced here</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>make_grammar.py</strong>
+    <ul>
+      <li><strong>input</strong> text file of parses
+        <ul>
+          <li>usually dataset_parsed.txt</li>
+        </ul>
+      </li>
+      <li><strong>output</strong>: a pickled list of elementary tree strings
+        <ul>
+          <li>dataset.v1.pkl</li>
+        </ul>
+      </li>
+      <li>other information:
+        <ul>
+          <li>this is the grammar as a list of bracketed tree strins</li>
+          <li>uses collins’ head rules</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>preprocess.py</strong>
+    <ul>
+      <li><strong>input</strong>: pickled list of elementary tree strings</li>
+      <li><strong>output</strong>: pickled list of elementary tree strings
+        <ul>
+          <li>dataset.final.pkl</li>
+        </ul>
+      </li>
+      <li>other information:
+        <ul>
+          <li>removes redundancies and subsuming projections</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>pathgen.py</strong>
+    <ul>
+      <li><strong>input</strong> the sentence dataset to convert to a path dataset for NLG
+        <ul>
+          <li>sentence dataset</li>
+          <li>dataset.final.pkl (the grammar)</li>
+        </ul>
+      </li>
+      <li><strong>output</strong> a dataset for constructing derivation paths in an NLG system
+        <ul>
+          <li>paths.json
+            <ul>
+              <li>[(surface, path_sequence), …]</li>
+              <li>path_sequence is a 4-tuple: (elementary tree, self hlf, target hlf, target gorn)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>other information
+        <ul>
+          <li><strong>constraint solver</strong>
+            <ul>
+              <li>for each of the sentences in the dataset, convert to Hobbsian (hlf) predicates</li>
+              <li>construct a CSP over the grammar to match the graph structure of the predicates</li>
+              <li>use a CSP solver to generate derivation trees</li>
+            </ul>
+          </li>
+          <li><strong>make paths</strong>
+            <ul>
+              <li>convert derivation trees to paths of (elementary tree, self hlf, target hlf, target gorn) tuples.
+                <ul>
+                  <li>via a modified pre-order walk of the tree</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><strong>infer label</strong>
+            <ul>
+              <li>use the surface form and logical unification to determine if the generated derivation is good or bad</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>feature_gen.py</strong>
+    <ul>
+      <li><strong>input</strong> the path dataset in derivation tree reconstruction form
+        <ul>
+          <li>paths.json</li>
+        </ul>
+      </li>
+      <li><strong>output</strong>: pickled list of (label, path_features)
+        <ul>
+          <li>learning_data.pkl</li>
+          <li>path_features is a list of feature id sets for each of the derivation trees in the path</li>
+          <li>path_features = [feature_ids, feature_ids, feature_ids, …]</li>
+        </ul>
+      </li>
+      <li>other_information
+        <ul>
+          <li>construct the derivation tree at each step in the path</li>
+          <li>generate the feature set for that derivation tree
+            <ul>
+              <li>it is done recursively, so it will share features with nodes prior to it</li>
+              <li>the features are strings that represent the feature</li>
+            </ul>
+          </li>
+          <li>it populates a vocabulary from all of the feature sets that maps feature strings to feature ids</li>
+          <li>after it goes through all of the paths, it then encodes them as their feature id sets</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>learner.py</strong>
+    <ul>
+      <li><strong>input</strong> the picked list of feature_ids
+        <ul>
+          <li>learning_data.pkl</li>
+        </ul>
+      </li>
+      <li><strong>output</strong> the pickled model parameters
+        <ul>
+          <li>model_version_params.pkl</li>
+        </ul>
+      </li>
+      <li>other information
+        <ul>
+          <li>uses yaml files to inform an assistant class (igor) for controlling experiment</li>
+          <li>uses yaml files to run different experiments</li>
+          <li>use igor to link experiment parameters to results
+            <ul>
+              <li>Note: as of Feb 11, this is intended functionality</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>

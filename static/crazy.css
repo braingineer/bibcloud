@@ -1,0 +1,62 @@
+
+}
+div > ol > li:nth-child(even) {
+    background: #EEFFDD; /* green */
+    border-right: 4px #CCC solid;
+    border-top: 4px #CCC solid;
+    border-bottom: 4px #CCC solid;
+}
+div > ol > li:nth-child(odd) {
+    background: #DDEEFF; /* blue */
+    border-right: 4px #CCC solid;
+    border-top: 4px #CCC solid;
+    border-bottom: 4px #CCC solid;
+}
+ol > li:nth-child(even) > ul > li:nth-child(odd) {
+    background: #EEFFDD;
+    border-right: 2px #CCC solid;
+    border-top: 2px #CCC solid;
+    border-bottom: 2px #CCC solid;
+}
+ol > li:nth-child(odd) > ul > li:nth-child(odd) {
+    background: #EEFFDD;
+    border-right: 2px #CCC solid;
+    border-top: 2px #CCC solid;
+    border-bottom: 2px #CCC solid;
+}
+ol > li:nth-child(even) > ol > li:nth-child(odd) {
+    background: #DDEEFF;
+    border-right: 2px #CCC solid;
+    border-top: 2px #CCC solid;
+    border-bottom: 2px #CCC solid;
+}
+ol > li:nth-child(odd) > ol > li:nth-child(odd) {
+    background: #EEFFDD;
+    border-right: 2px #CCC solid;
+    border-top: 2px #CCC solid;
+    border-bottom: 2px #CCC solid;
+}
+div > ul > li:nth-child(even) {
+    background: #EEFFDD; /* green */
+    border-right: 4px #CCC solid;
+    border-top: 4px #CCC solid;
+    border-bottom: 4px #CCC solid;
+}
+div > ul > li:nth-child(odd) {
+    background: #DDEEFF; /* blue */
+    border-right: 4px #CCC solid;
+    border-top: 4px #CCC solid;
+    border-bottom: 4px #CCC solid;
+}
+ul > li:nth-child(even) > ol > li:nth-child(odd) {
+    background: #DDEEFF;
+    border-right: 2px #CCC solid;
+    border-top: 2px #CCC solid;
+    border-bottom: 2px #CCC solid;
+}
+ul > li:nth-child(odd) > ol > li:nth-child(odd) {
+    background: #EEFFDD;
+    border-right: 2px #CCC solid;
+    border-top: 2px #CCC solid;
+    border-bottom: 2px #CCC solid;
+}

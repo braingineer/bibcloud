@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF8">
+<link rel="stylesheet" href="{{ site.baseurl }}/static/bootstrap.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/static/font-awesome.css" />
+<link rel='stylesheet' type='text/css' href='{{ site.baseurl}}/static/default.css'>
+<script src="{{ site.baseurl }}/static/jquery-2.2.0.js"></script>
+<script src="{{ site.baseurl }}/static/list.js"></script>
+<title>bib.cloud</title>
+</head>
+<body>
+<div style='min-height: 100%; position: relative; padding: 0 0 100px 0;'>
+
+    <!-- HEADER -->
+    <header>
+      <div class="container">bib.cloud
+      </div>
+    </header>
+
+    <div id='menu'><div class='btn-container'>
+        <a href="{{ site.baseurl }}" id='home' class='btn'>home</a>
+        <a href='http://github.com/braingineer' id='github' class='btn'>github</a>
+        <a href='#' id='cv' class='btn'>cv</a>
+        <a href='#' id='etc' class='btn'>etc</a>
+    </div></div>
+
+<!-- BODY -->
+
+    <div id='content'>
+            <h1 class='title'>
+            {{page.title}}
+            </h1>
+
+    {{ content }}
+    </div>
+
+<!-- footer -->
+
+<div id='tagline'>made by brian mcmahan</div>
+
+</div>
+<script>
+doit()
+</script>
+</body>
+</html>

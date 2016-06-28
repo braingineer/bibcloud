@@ -1,0 +1,43 @@
+<blockquote>
+  <p>working through the gist neural network architecture</p>
+</blockquote>
+
+<h3 id="existing-tree-nn">Existing Tree NN</h3>
+<ul>
+  <li>There is a bunch of NN that exist out there that capture tree relationships</li>
+  <li>Notably, the following.</li>
+</ul>
+
+<h4 id="sochers-dt-rnn-dependency-tree-rnn">Socher’s DT-RNN (dependency tree-rnn)</h4>
+<ol>
+  <li>uses dependency parsing to create the graph structure</li>
+  <li>merges upwards using context matrices to compute the output value</li>
+  <li>has a heuristic in that weighting the contribution from children by the number of leaf nodes they dominate</li>
+</ol>
+
+<h4 id="lapatas-treelstm">Lapata’s TreeLSTM</h4>
+<ol>
+  <li>downward movement production network</li>
+  <li>starts with root and produces children, using several LSTM to maintain properties</li>
+  <li>LSTMs share hidden node</li>
+  <li>can get a probability of next attachment because it’s LSTM down the tree</li>
+</ol>
+
+<h4 id="andreas-cnm-compositional-network-modules">Andreas’ CNM (compositional network modules)</h4>
+<ol>
+  <li>starts from dependency parse and converts nodes to modules
+    <ul>
+      <li>how this gets mapped, i’m not quite sure yet</li>
+    </ul>
+  </li>
+  <li>constructs the network as a layout function</li>
+  <li>optimizes the layout</li>
+  <li>back props the layout error to the layout function via REINFORCE</li>
+  <li>top layer output nodes can mean different things because they come from different modules
+    <ul>
+      <li>so, find output would location</li>
+      <li>describe output would describe</li>
+    </ul>
+  </li>
+</ol>
+

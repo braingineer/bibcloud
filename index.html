@@ -1,0 +1,44 @@
+---
+index: $~
+title: root
+layout: default
+---
+
+<div class='container-fluid'>
+    <div class='infobox listheader no_selection bibs'>bibs (expanded)</div>
+        <ul class='bibs entries'>
+        <li class='bibs filler'>bib items hidden</li>
+        {% for post in site.posts %}
+            {% if post.categories[0] contains "bibs" %}
+                <li class='bibs entry'>
+                    <div class='entry-date'>
+                    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+                    </div><div class='entry-title'>
+                    <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+                    </div>
+                    {{ post.excerpt | strip_html }}
+                </li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    </div>
+</div>
+
+
+<script>
+var bibson=true;
+$('.bibs.listheader').click(function() {
+    if (ongon) {
+        $('.bibs.entry').css('display', 'none');
+        $('.bibs.filler').css('display', 'initial')
+        ongon = false;
+        $('.bibs.listheader').html("bibs (collapsed)");
+    }
+    else {
+        $('.bibs.entry').css('display', 'inherit');
+        $('.bibs.filler').css('display', 'none');
+        ongon = true;
+        $('.bibs.listheader').html("bibs (expanded)");
+    }
+});
+</script>

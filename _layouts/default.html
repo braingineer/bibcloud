@@ -13,7 +13,7 @@
 
     <!-- HEADER -->
     <header>
-      <div class="container">bib.cloud
+      <div class="container" id='title'>bib.cloud
       </div>
     </header>
 
@@ -25,9 +25,13 @@
 <!-- BODY -->
 
     <div id='content'>
-            <h1 class='title'>
-            {{page.title}}
-            </h1>
+            <blockquote>
+            <h3 class='title'>
+            <span style='font-size: 100%'>Title:</span> {{page.title}}
+            </h3>
+            <p class='description'>Description: {{page.description}}
+            </p>
+            </blockquote>
 
     {{ content }}
     </div>

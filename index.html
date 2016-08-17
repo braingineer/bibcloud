@@ -16,7 +16,7 @@ layout: default
                     </div><div class='entry-title'>
                     <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
                     </div>
-                    {{ post.excerpt | strip_html }}
+                    {{ post.description }}
                 </li>
             {% endif %}
         {% endfor %}

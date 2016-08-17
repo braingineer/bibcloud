@@ -200,7 +200,7 @@ a.btn:hover {
     bottom: 0;
     width:100%;
     text-align: center;
-    background: #F4CA97;
+    background: #8E9DA2;
     border-top: 10px #7f7979 solid;
     font-family: monospace;
 }
@@ -292,7 +292,7 @@ blockquote {
 
 .infobox {
     border: 1px black solid;
-    background: #C1Bdb3;
+    background: #8E9DA2;
     max-width: 500px;
     text-align: center;
     font-size: 20px;

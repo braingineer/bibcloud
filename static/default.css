@@ -64,7 +64,7 @@ button {
     text-decoration: none;
     background-color: #B9C898;
     height:25px;
-    margin: 0px auto;
+    margin: 0px 5px;
 }
 
 button:hover {
@@ -91,8 +91,6 @@ input.search {
   width: 50%;
 }
 .sort {
-  height:30px;
-  
     -webkit-user-select: none; /* webkit (safari, chrome) browsers */
     -moz-user-select: none; /* mozilla browsers */
     -khtml-user-select: none; /* webkit (konqueror) browsers */

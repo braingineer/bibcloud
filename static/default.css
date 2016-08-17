@@ -260,7 +260,7 @@ h1, h2, h3 {
     display: none;
 }
 
-p.description {
+.description {
     min-width: 100%;
     padding:0 10px;
     margin: 0;

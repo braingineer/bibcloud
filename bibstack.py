@@ -104,19 +104,24 @@ def make_js(num):
     return output
 
 def make_all():
-    basepath = "/home/cogniton/research/code"
-    bibpath = basepath+"/chronicles/wiki/dissertation/bibs"
-    devblogpath = basepath+"/devblog/_drafts"
+    basepath = "."
+    bibpath = basepath+"/bibs"
+    devblogpath = basepath+"/_drafts"
     for filename in glob.glob(os.path.join(bibpath, "*.bib")):
         bibname = filename.split("/")[-1].replace(".bib", "")
         content, js,meta = make(filename)
         with open(os.path.join(devblogpath, bibname+".html"), 'w') as fp:
             thedate = time.strftime("%Y-%m-%d", time.localtime())
             fp.write("\n".join(["---", "title: {}".format(meta.setdefault("title", bibname)),
-                                "layout: main",
-                                "categories: bibs", "date: {}".format(thedate), "---"]))
+                                "layout: default",
+                                "categories: {}".format(meta.setdefault("categories", "bibs")), 
+                                "date: {}".format(thedate), 
+                                "description: {}".format(meta.setdefault("description", "A Bibliography")),
+                                "---"]))
             fp.write("\n"*5)
-            fp.write("<blockquote><p>{}</p></blockquote>\n\n".format(meta.setdefault("desc", "A Bibliography")))
             fp.write(content)
             fp.write("\n\n")
             fp.write(js)
+
+if __name__ == "__main__":
+    make_all()

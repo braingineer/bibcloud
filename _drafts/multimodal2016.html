@@ -1,0 +1,57 @@
+---
+title: Multimodal Semantics
+layout: default
+categories: bibs
+date: 2016-08-17
+description: a collection of papers for the look at language and vision
+---
+
+
+
+
+<div id='bibitems'><div class='btn-container'><br><input class='search' placeholder='Search title, authors, abstract, and notes'/><br><button class='sort' data-sort='author'>Sort by Author</button><button class='sort' data-sort='year'>Sort by Year</button><button class='sort' data-sort='title'>Sort by Title</button><button id='showhide'>Expand all annotations</button></div>
+<ul class='bib list'><li>
+                  <div id='entry0' class='bib entry'>
+
+                    <a href='http://arxiv.org/abs/1608.00525v1' class='title'>Modeling Context Between Objects for Referring Expression Understanding</a>
+                    <br><span class='author'>Varun K. Nagaraja, Vlad I. Morariu, Larry S. Davis.</span> <br>
+                    <span class='year'>2016</span><br>
+                    <div id='annotation0hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno0' class='bib annotation'>
+                          <div id='abstract0' class='bib abstract'><b>Abstract</b>
+                            Referring expressions usually describe an object using properties of the object and relationships of the object with other objects. We propose a technique that integrates context between objects to understand referring expressions. Our approach uses an LSTM to learn the probability of a referring expression, with input features from a region and a context region. The context regions are discovered using multiple-instance learning (MIL) since annotations for context objects are generally not available for training. We utilize max-margin based MIL objective functions for training the LSTM. Experiments on the Google RefExp and UNC RefExp datasets show that modeling context between objects provides better performance than modeling only object properties. We also qualitatively show that our technique can ground a referring expression to its referred region along with the supporting context region.</div>
+                          <div id='notes0' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+</ul></div>
+
+
+<script>var options={valueNames:['title','author','year', 'abstract', 'notes']};
+var userList = new List('bibitems', options);</script><script>
+        var bibentry0on = true;
+        $('#annotation0hider').click(function() {
+            console.trace('here');
+            if (bibentry0on) {
+                $('#annotation0hider').html('show annotations');
+                $('#anno0.bib.annotation').css('display', 'none');
+                bibentry0on = false;
+            }
+            else {
+                $('#anno0.bib.annotation').css('display', 'inherit');
+                $('#annotation0hider').html("hide annotations");
+                bibentry0on = true;
+            }
+        });
+        $('#annotation0hider').click();</script>
+<script> var allshowing=false; 
+function hideall() { 
+allshowing=false;bibentry0on = true; $('#annotation0hider').click();
+}
+function showall() { 
+allshowing=true;
+bibentry0on = false; $('#annotation0hider').click();
+}
+$('#showhide').click(function() {if (allshowing) { hideall(); $('#showhide').html('Expand all annoations');}else { showall(); $('#showhide').html('Hide all annoations');}});</script>

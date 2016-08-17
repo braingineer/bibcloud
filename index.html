@@ -1,7 +1,8 @@
 ---
 index: $~
-title: root
+title: index page
 layout: default
+description: front matter for a bibtex viewer 
 ---
 
 <div class='container-fluid'>
@@ -28,16 +29,16 @@ layout: default
 <script>
 var bibson=true;
 $('.bibs.listheader').click(function() {
-    if (ongon) {
+    if (bibson) {
         $('.bibs.entry').css('display', 'none');
         $('.bibs.filler').css('display', 'initial')
-        ongon = false;
+        bibson = false;
         $('.bibs.listheader').html("bibs (collapsed)");
     }
     else {
         $('.bibs.entry').css('display', 'inherit');
         $('.bibs.filler').css('display', 'none');
-        ongon = true;
+        bibson = true;
         $('.bibs.listheader').html("bibs (expanded)");
     }
 });

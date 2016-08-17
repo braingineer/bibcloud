@@ -60,9 +60,7 @@ button {
     padding: 8px 30px;
     border-radius: 6px;
     border: 2px solid #7f7979;
-    border: none;
     display: inline-block;
-    color: #888;
     text-decoration: none;
     background-color: #B9C898;
     height:30px;
@@ -163,7 +161,7 @@ input.search {
     border: 2px solid #7f7979;
 }
 
-.bib.btn:hover {
+.btn:hover {
     background: #E6F0D0;
 }
 

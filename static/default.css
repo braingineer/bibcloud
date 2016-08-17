@@ -72,6 +72,9 @@ button:hover {
     background-color:#E6F0D0;
 }
 
+button:focus {
+    outline: none;
+}
 
 
 
@@ -175,6 +178,7 @@ a:hover {
 a.btn:active,
 a.btn:link,
 a.btn:visited {
+    color: black;
     text-decoration: none;
 }
 

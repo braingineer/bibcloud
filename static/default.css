@@ -63,8 +63,8 @@ button {
     display: inline-block;
     text-decoration: none;
     background-color: #B9C898;
-    height:30px;
-    margin: 0px 5px;
+    height:25px;
+    margin: 0px auto;
 }
 
 button:hover {
@@ -177,11 +177,12 @@ a:hover {
 a.btn:active,
 a.btn:link,
 a.btn:visited {
+    text-decoration: none;
 }
 
 a.btn:hover {
     color: #447789;
-    background: #76894B;
+    background: #E6F0D0;
 }
 
 #content{

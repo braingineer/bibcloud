@@ -126,5 +126,7 @@ if __name__ == '__main__':
         arxivids = [x.replace("\n","").strip() for x in fp.readlines()]
 
     with open(outname, 'w') as fp:
-        fp.write("## automated generation from arxiv2bib.py\n\n")
+        fp.write("% title: {}; from arxiv\n".format(args['INFILE']))
+        fp.write("% categories: bibs\n")
+        fp.write("% description: automatically generated from arxiv2bib.py\n\n")
         fp.write("\n\n".join(retrieve(arxivids)))

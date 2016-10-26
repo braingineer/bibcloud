@@ -1,9 +1,9 @@
 ---
-title: mathstats
+title: Mathematics/Statistics/Machine Learning
 layout: default
 categories: bibs
 date: 2016-10-26
-description: A Bibliography
+description: interesting methodologies/modeling maths
 ---
 
 
@@ -133,6 +133,38 @@ description: A Bibliography
                           <div id='abstract7' class='bib abstract'><b>Abstract</b>
                             Empty</div>
                           <div id='notes7' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+<li>
+                  <div id='entry8' class='bib entry'>
+
+                    <a href='#' class='title'>Search-based structured prediction</a>
+                    <br><span class='author'>{Daum\'e III}, Hal and Langford, John and Marcu, Daniel.</span> <br>
+                    <span class='year'>2009</span><br>
+                    <div id='annotation8hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno8' class='bib annotation'>
+                          <div id='abstract8' class='bib abstract'><b>Abstract</b>
+                            Empty</div>
+                          <div id='notes8' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+<li>
+                  <div id='entry9' class='bib entry'>
+
+                    <a href='#' class='title'>Discovering Hidden Factors of Variation in Deep Networks</a>
+                    <br><span class='author'>Cheung, Brian and Livezey, Jesse A and Bansal, Arjun K and Olshausen, Bruno A.</span> <br>
+                    <span class='year'>2014</span><br>
+                    <div id='annotation9hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno9' class='bib annotation'>
+                          <div id='abstract9' class='bib abstract'><b>Abstract</b>
+                            Empty</div>
+                          <div id='notes9' class='bib notes'><b>Notes</b>
                            Empty</div>
                     </div>
                   </div>
@@ -270,6 +302,38 @@ var userList = new List('bibitems', options);</script><script>
             }
         });
         $('#annotation7hider').click();</script>
+<script>
+        var bibentry8on = true;
+        $('#annotation8hider').click(function() {
+            console.trace('here');
+            if (bibentry8on) {
+                $('#annotation8hider').html('show annotations');
+                $('#anno8.bib.annotation').css('display', 'none');
+                bibentry8on = false;
+            }
+            else {
+                $('#anno8.bib.annotation').css('display', 'inherit');
+                $('#annotation8hider').html("hide annotations");
+                bibentry8on = true;
+            }
+        });
+        $('#annotation8hider').click();</script>
+<script>
+        var bibentry9on = true;
+        $('#annotation9hider').click(function() {
+            console.trace('here');
+            if (bibentry9on) {
+                $('#annotation9hider').html('show annotations');
+                $('#anno9.bib.annotation').css('display', 'none');
+                bibentry9on = false;
+            }
+            else {
+                $('#anno9.bib.annotation').css('display', 'inherit');
+                $('#annotation9hider').html("hide annotations");
+                bibentry9on = true;
+            }
+        });
+        $('#annotation9hider').click();</script>
 <script> var allshowing=false; 
 function hideall() { 
 allshowing=false;bibentry0on = true; $('#annotation0hider').click();
@@ -280,6 +344,8 @@ bibentry4on = true; $('#annotation4hider').click();
 bibentry5on = true; $('#annotation5hider').click();
 bibentry6on = true; $('#annotation6hider').click();
 bibentry7on = true; $('#annotation7hider').click();
+bibentry8on = true; $('#annotation8hider').click();
+bibentry9on = true; $('#annotation9hider').click();
 }
 function showall() { 
 allshowing=true;
@@ -291,5 +357,7 @@ bibentry4on = false; $('#annotation4hider').click();
 bibentry5on = false; $('#annotation5hider').click();
 bibentry6on = false; $('#annotation6hider').click();
 bibentry7on = false; $('#annotation7hider').click();
+bibentry8on = false; $('#annotation8hider').click();
+bibentry9on = false; $('#annotation9hider').click();
 }
 $('#showhide').click(function() {if (allshowing) { hideall(); $('#showhide').html('Expand all annoations');}else { showall(); $('#showhide').html('Hide all annoations');}});</script>

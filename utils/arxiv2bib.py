@@ -98,12 +98,12 @@ def retrieve(arxiv_ids):
         download.encoding = "UTF-8"
         data = download.read()
         if data == None:
-            print("could not retrieve anything")
+            print("could not retrieve anything; {}".format(",".join(map(str,arxiv_ids))))
         else:
             feed = xml.etree.ElementTree.fromstring(data)
             first_title = feed.find("{http://www.w3.org/2005/Atom}entry/{http://www.w3.org/2005/Atom}title")
             if first_title == None or first_title.text == "Error":
-                print("could not retreive anything")
+                print("could not retrieve anything; {}".format(",".join(map(str,arxiv_ids))))
             else:
                 papersiterator = feed.getiterator("{http://www.w3.org/2005/Atom}entry")
                 for paper in papersiterator:
@@ -129,4 +129,6 @@ if __name__ == '__main__':
         fp.write("% title: {}; from arxiv\n".format(args['INFILE']))
         fp.write("% categories: bibs\n")
         fp.write("% description: automatically generated from arxiv2bib.py\n\n")
-        fp.write("\n\n".join(retrieve(arxivids)))
+        for arxivid in arxivids:
+            fp.write("".join(retrieve([arxivid]))+"\n\n")
+        #fp.write("\n\n".join(retrieve(arxivids)))

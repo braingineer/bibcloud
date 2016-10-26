@@ -1,9 +1,9 @@
 ---
-title: Multimodal Semantics
+title: generalml
 layout: default
 categories: bibs
-date: 2016-08-17
-description: a collection of papers for the look at language and vision
+date: 2016-10-26
+description: A Bibliography
 ---
 
 
@@ -13,14 +13,30 @@ description: a collection of papers for the look at language and vision
 <ul class='bib list'><li>
                   <div id='entry0' class='bib entry'>
 
-                    <a href='http://arxiv.org/abs/1608.00525v1' class='title'>Modeling Context Between Objects for Referring Expression Understanding</a>
-                    <br><span class='author'>Varun K. Nagaraja, Vlad I. Morariu, Larry S. Davis.</span> <br>
-                    <span class='year'>2016</span><br>
+                    <a href='#' class='title'>Search-based structured prediction</a>
+                    <br><span class='author'>{Daum\'e III}, Hal and Langford, John and Marcu, Daniel.</span> <br>
+                    <span class='year'>2009</span><br>
                     <div id='annotation0hider' class='bib no-selection btn'>hide annotations</div>
                     <div id='anno0' class='bib annotation'>
                           <div id='abstract0' class='bib abstract'><b>Abstract</b>
-                            Referring expressions usually describe an object using properties of the object and relationships of the object with other objects. We propose a technique that integrates context between objects to understand referring expressions. Our approach uses an LSTM to learn the probability of a referring expression, with input features from a region and a context region. The context regions are discovered using multiple-instance learning (MIL) since annotations for context objects are generally not available for training. We utilize max-margin based MIL objective functions for training the LSTM. Experiments on the Google RefExp and UNC RefExp datasets show that modeling context between objects provides better performance than modeling only object properties. We also qualitatively show that our technique can ground a referring expression to its referred region along with the supporting context region.</div>
+                            Empty</div>
                           <div id='notes0' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+<li>
+                  <div id='entry1' class='bib entry'>
+
+                    <a href='#' class='title'>Discovering Hidden Factors of Variation in Deep Networks</a>
+                    <br><span class='author'>Cheung, Brian and Livezey, Jesse A and Bansal, Arjun K and Olshausen, Bruno A.</span> <br>
+                    <span class='year'>2014</span><br>
+                    <div id='annotation1hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno1' class='bib annotation'>
+                          <div id='abstract1' class='bib abstract'><b>Abstract</b>
+                            Empty</div>
+                          <div id='notes1' class='bib notes'><b>Notes</b>
                            Empty</div>
                     </div>
                   </div>
@@ -46,12 +62,30 @@ var userList = new List('bibitems', options);</script><script>
             }
         });
         $('#annotation0hider').click();</script>
+<script>
+        var bibentry1on = true;
+        $('#annotation1hider').click(function() {
+            console.trace('here');
+            if (bibentry1on) {
+                $('#annotation1hider').html('show annotations');
+                $('#anno1.bib.annotation').css('display', 'none');
+                bibentry1on = false;
+            }
+            else {
+                $('#anno1.bib.annotation').css('display', 'inherit');
+                $('#annotation1hider').html("hide annotations");
+                bibentry1on = true;
+            }
+        });
+        $('#annotation1hider').click();</script>
 <script> var allshowing=false; 
 function hideall() { 
 allshowing=false;bibentry0on = true; $('#annotation0hider').click();
+bibentry1on = true; $('#annotation1hider').click();
 }
 function showall() { 
 allshowing=true;
 bibentry0on = false; $('#annotation0hider').click();
+bibentry1on = false; $('#annotation1hider').click();
 }
 $('#showhide').click(function() {if (allshowing) { hideall(); $('#showhide').html('Expand all annoations');}else { showall(); $('#showhide').html('Hide all annoations');}});</script>

@@ -1,3 +1,15 @@
+'''convert bib files into draft blog posts.
+
+Usage:
+    bibstack.py make (all | --target FILE)
+
+Options:
+    all                make everything in bibs folder
+    -t,--target FILE   make the FILE 
+
+'''
+
+from docopt import docopt
 import time
 import bibtexparser
 import glob
@@ -104,7 +116,7 @@ def make_js(num):
     return output
 
 def make_all():
-    basepath = "."
+    basepath = ".."
     bibpath = basepath+"/bibs"
     devblogpath = basepath+"/_drafts"
     for filename in glob.glob(os.path.join(bibpath, "*.bib")):
@@ -124,4 +136,9 @@ def make_all():
             fp.write(js)
 
 if __name__ == "__main__":
-    make_all()
+    args = docopt(__doc__, version="arxvi2bib; v0.2")
+    print(args)
+    if args['make'] and args['all']:
+        make_all()
+    elif args['make'] and args['--target']:
+        pass

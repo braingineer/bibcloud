@@ -1,0 +1,669 @@
+---
+title: fallstack
+layout: default
+categories: bibs
+date: 2016-10-26
+description: A Bibliography
+---
+
+
+
+
+<div id='bibitems'><div class='btn-container'><br><input class='search' placeholder='Search title, authors, abstract, and notes'/><br><button class='sort' data-sort='author'>Sort by Author</button><button class='sort' data-sort='year'>Sort by Year</button><button class='sort' data-sort='title'>Sort by Title</button><button id='showhide'>Expand all annotations</button></div>
+<ul class='bib list'><li>
+                  <div id='entry0' class='bib entry'>
+
+                    <a href='http://arxiv.org/abs/1609.00777v1' class='title'>End-to-End Reinforcement Learning of Dialogue Agents for Information Access</a>
+                    <br><span class='author'>Bhuwan Dhingra, Lihong Li, Xiujun Li, Jianfeng Gao, Yun-Nung Chen, Faisal Ahmed, Li Deng.</span> <br>
+                    <span class='year'>2016</span><br>
+                    <div id='annotation0hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno0' class='bib annotation'>
+                          <div id='abstract0' class='bib abstract'><b>Abstract</b>
+                            This paper proposes \emph{KB-InfoBot}---a dialogue agent that provides users with an entity from a knowledge base (KB) by interactively asking for its attributes. All components of the KB-InfoBot are trained in an end-to-end fashion using reinforcement learning. Goal-oriented dialogue systems typically need to interact with an external database to access real-world knowledge (e.g. movies playing in a city). Previous systems achieved this by issuing a symbolic query to the database and adding retrieved results to the dialogue state. However, such symbolic operations break the differentiability of the system and prevent end-to-end training of neural dialogue agents. In this paper, we address this limitation by replacing symbolic queries with an induced "soft" posterior distribution over the KB that indicates which entities the user is interested in. We also provide a modified version of the episodic REINFORCE algorithm, which allows the KB-InfoBot to explore and learn both the policy for selecting dialogue acts and the posterior over the KB for retrieving the correct entities. Experimental results show that the end-to-end trained KB-InfoBot outperforms competitive rule-based baselines, as well as agents which are not end-to-end trainable.</div>
+                          <div id='notes0' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+<li>
+                  <div id='entry1' class='bib entry'>
+
+                    <a href='http://arxiv.org/abs/1608.05813v3' class='title'>phi-LSTM: A Phrase-based Hierarchical LSTM Model for Image Captioning</a>
+                    <br><span class='author'>Ying Hua Tan, Chee Seng Chan.</span> <br>
+                    <span class='year'>2016</span><br>
+                    <div id='annotation1hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno1' class='bib annotation'>
+                          <div id='abstract1' class='bib abstract'><b>Abstract</b>
+                            A picture is worth a thousand words. Not until recently, however, we noticed some success stories in understanding of visual scenes: a model that is able to detect/name objects, describe their attributes, and recognize their relationships/interactions. In this paper, we propose a phrase-based hierarchical Long Short-Term Memory (phi-LSTM) model to generate image description. The proposed model encodes sentence as a sequence of combination of phrases and words, instead of a sequence of words alone as in those conventional solutions. The two levels of this model are dedicated to i) learn to generate image relevant noun phrases, and ii) produce appropriate image description from the phrases and other words in the corpus. Adopting a convolutional neural network to learn image features and the LSTM to learn the word sequence in a sentence, the proposed model has shown better or competitive results in comparison to the state-of-the-art models on Flickr8k and Flickr30k datasets.</div>
+                          <div id='notes1' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+<li>
+                  <div id='entry2' class='bib entry'>
+
+                    <a href='http://arxiv.org/abs/1606.03632v2' class='title'>Natural Language Generation in Dialogue using Lexicalized and Delexicalized Data</a>
+                    <br><span class='author'>Shikhar Sharma, Jing He, Kaheer Suleman, Hannes Schulz, Philip Bachman.</span> <br>
+                    <span class='year'>2016</span><br>
+                    <div id='annotation2hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno2' class='bib annotation'>
+                          <div id='abstract2' class='bib abstract'><b>Abstract</b>
+                            Natural language generation plays a critical role in any spoken dialogue system. We present a new approach to natural language generation using recurrent neural networks in an encoder-decoder framework. In contrast with previous work, our model uses both lexicalized and delexicalized versions of slot-value pairs for each dialogue act. This allows our model to learn from all available data, rather than being restricted to learning only from delexicalized slot-value pairs. We show that this helps our model generate more natural sentences with better grammar. We further improve our model's performance by initializing its weights from a pretrained language model. Human evaluation of our best-performing model indicates that it generates sentences which users find more natural and appealing.</div>
+                          <div id='notes2' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+<li>
+                  <div id='entry3' class='bib entry'>
+
+                    <a href='http://arxiv.org/abs/1609.03286v1' class='title'>Knowledge as a Teacher: Knowledge-Guided Structural Attention Networks</a>
+                    <br><span class='author'>Yun-Nung Chen, Dilek Hakkani-Tur, Gokhan Tur, Asli Celikyilmaz, Jianfeng Gao, Li Deng.</span> <br>
+                    <span class='year'>2016</span><br>
+                    <div id='annotation3hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno3' class='bib annotation'>
+                          <div id='abstract3' class='bib abstract'><b>Abstract</b>
+                            Natural language understanding (NLU) is a core component of a spoken dialogue system. Recently recurrent neural networks (RNN) obtained strong results on NLU due to their superior ability of preserving sequential information over time. Traditionally, the NLU module tags semantic slots for utterances considering their flat structures, as the underlying RNN structure is a linear chain. However, natural language exhibits linguistic properties that provide rich, structured information for better understanding. This paper introduces a novel model, knowledge-guided structural attention networks (K-SAN), a generalization of RNN to additionally incorporate non-flat network topologies guided by prior knowledge. There are two characteristics: 1) important substructures can be captured from small training data, allowing the model to generalize to previously unseen test data; 2) the model automatically figures out the salient substructures that are essential to predict the semantic tags of the given sentences, so that the understanding performance can be improved. The experiments on the benchmark Air Travel Information System (ATIS) data show that the proposed K-SAN architecture can effectively extract salient knowledge from substructures with an attention mechanism, and outperform the performance of the state-of-the-art neural network based frameworks.</div>
+                          <div id='notes3' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+<li>
+                  <div id='entry4' class='bib entry'>
+
+                    <a href='http://arxiv.org/abs/1609.03441v1' class='title'>Read, Tag, and Parse All at Once, or Fully-neural Dependency Parsing</a>
+                    <br><span class='author'>Jan Chorowski, Michał Zapotoczny, Paweł Rychlikowski.</span> <br>
+                    <span class='year'>2016</span><br>
+                    <div id='annotation4hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno4' class='bib annotation'>
+                          <div id='abstract4' class='bib abstract'><b>Abstract</b>
+                            We present a dependency parser implemented as a single deep neural network that reads orthographic representations of words and directly generates dependencies and their labels. Unlike typical approaches to parsing, the model doesn't require part-of-speech (POS) tagging of the sentences. With proper regularization and additional supervision achieved with multitask learning we reach state-of-the-art performance on Slavic languages from the Universal Dependencies treebank: with no linguistic features other than characters, our parser is as accurate as a transition- based system trained on perfect POS tags.</div>
+                          <div id='notes4' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+<li>
+                  <div id='entry5' class='bib entry'>
+
+                    <a href='http://arxiv.org/abs/1609.03528v1' class='title'>The Microsoft 2016 Conversational Speech Recognition System</a>
+                    <br><span class='author'>W. Xiong, J. Droppo, X. Huang, F. Seide, M. Seltzer, A. Stolcke, D. Yu, G. Zweig.</span> <br>
+                    <span class='year'>2016</span><br>
+                    <div id='annotation5hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno5' class='bib annotation'>
+                          <div id='abstract5' class='bib abstract'><b>Abstract</b>
+                            We describe Microsoft's conversational speech recognition system, in which we combine recent developments in neural-network-based acoustic and language modeling to advance the state of the art on the Switchboard recognition task. Inspired by machine learning ensemble techniques, the system uses a range of convolutional and recurrent neural networks. I-vector modeling and lattice-free MMI training provide significant gains for all acoustic model architectures. Language model rescoring with multiple forward and backward running RNNLMs, and word posterior-based system combination provide a 20% boost. The best single system uses a ResNet architecture acoustic model with RNNLM rescoring, and achieves a word error rate of 6.9% on the NIST 2000 Switchboard task. The combined system has an error rate of 6.3%, representing an improvement over previously reported results on this benchmark task.</div>
+                          <div id='notes5' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+<li>
+                  <div id='entry6' class='bib entry'>
+
+                    <a href='http://arxiv.org/abs/1609.07451v1' class='title'>AMR-to-text generation as a Traveling Salesman Problem</a>
+                    <br><span class='author'>Linfeng Song, Yue Zhang, Xiaochang Peng, Zhiguo Wang, Daniel Gildea.</span> <br>
+                    <span class='year'>2016</span><br>
+                    <div id='annotation6hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno6' class='bib annotation'>
+                          <div id='abstract6' class='bib abstract'><b>Abstract</b>
+                            The task of AMR-to-text generation is to generate grammatical text that sustains the semantic meaning for a given AMR graph. We at- tack the task by first partitioning the AMR graph into smaller fragments, and then generating the translation for each fragment, before finally deciding the order by solving an asymmetric generalized traveling salesman problem (AGTSP). A Maximum Entropy classifier is trained to estimate the traveling costs, and a TSP solver is used to find the optimized solution. The final model reports a BLEU score of 22.44 on the SemEval-2016 Task8 dataset.</div>
+                          <div id='notes6' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+<li>
+                  <div id='entry7' class='bib entry'>
+
+                    <a href='http://arxiv.org/abs/1610.02424v1' class='title'>Diverse Beam Search: Decoding Diverse Solutions from Neural Sequence Models</a>
+                    <br><span class='author'>Ashwin K Vijayakumar, Michael Cogswell, Ramprasath R. Selvaraju, Qing Sun, Stefan Lee, David Crandall, Dhruv Batra.</span> <br>
+                    <span class='year'>2016</span><br>
+                    <div id='annotation7hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno7' class='bib annotation'>
+                          <div id='abstract7' class='bib abstract'><b>Abstract</b>
+                            Neural sequence models are widely used to model time-series data in many fields. Equally ubiquitous is the usage of beam search (BS) as an approximate inference algorithm to decode output sequences from these models. BS explores the search space in a greedy left-right fashion retaining only the top-$B$ candidates -- resulting in sequences that differ only slightly from each other. Producing lists of nearly identical sequences is not only computationally wasteful but also typically fails to capture the inherent ambiguity of complex AI tasks. To overcome this problem, we propose \emph{Diverse Beam Search} (DBS), an alternative to BS that decodes a list of diverse outputs by optimizing for a diversity-augmented objective. We observe that our method finds better top-1 solutions by controlling for the exploration and exploitation of the search space -- implying that DBS is a \emph{better search algorithm}. Moreover, these gains are achieved with minimal computational or memory overhead as compared to beam search. To demonstrate the broad applicability of our method, we present results on image captioning, machine translation and visual question generation using both standard quantitative metrics and qualitative human studies. Our method consistently outperforms BS and previously proposed techniques for diverse decoding from neural sequence models.</div>
+                          <div id='notes7' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+<li>
+                  <div id='entry8' class='bib entry'>
+
+                    <a href='http://arxiv.org/abs/1610.02544v1' class='title'>Computational linking theory</a>
+                    <br><span class='author'>Aaron Steven White, Drew Reisinger, Rachel Rudinger, Kyle Rawlins, Benjamin Van Durme.</span> <br>
+                    <span class='year'>2016</span><br>
+                    <div id='annotation8hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno8' class='bib annotation'>
+                          <div id='abstract8' class='bib abstract'><b>Abstract</b>
+                            A linking theory explains how verbs' semantic arguments are mapped to their syntactic arguments---the inverse of the Semantic Role Labeling task from the shallow semantic parsing literature. In this paper, we develop the Computational Linking Theory framework as a method for implementing and testing linking theories proposed in the theoretical literature. We deploy this framework to assess two cross-cutting types of linking theory: local v. global models and categorical v. featural models. To further investigate the behavior of these models, we develop a measurement model in the spirit of previous work in semantic role induction: the Semantic Proto-Role Linking Model. We use this model, which implements a generalization of Dowty's seminal Proto-Role Theory, to induce semantic proto-roles, which we compare to those Dowty proposes.</div>
+                          <div id='notes8' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+<li>
+                  <div id='entry9' class='bib entry'>
+
+                    <a href='http://arxiv.org/abs/1610.02692v1' class='title'>Open-Ended Visual Question-Answering</a>
+                    <br><span class='author'>Issey Masuda, Santiago Pascual de la Puente, Xavier Giro-i-Nieto.</span> <br>
+                    <span class='year'>2016</span><br>
+                    <div id='annotation9hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno9' class='bib annotation'>
+                          <div id='abstract9' class='bib abstract'><b>Abstract</b>
+                            This thesis report studies methods to solve Visual Question-Answering (VQA) tasks with a Deep Learning framework. As a preliminary step, we explore Long Short-Term Memory (LSTM) networks used in Natural Language Processing (NLP) to tackle Question-Answering (text based). We then modify the previous model to accept an image as an input in addition to the question. For this purpose, we explore the VGG-16 and K-CNN convolutional neural networks to extract visual features from the image. These are merged with the word embedding or with a sentence embedding of the question to predict the answer. This work was successfully submitted to the Visual Question Answering Challenge 2016, where it achieved a 53,62% of accuracy in the test dataset. The developed software has followed the best programming practices and Python code style, providing a consistent baseline in Keras for different configurations.</div>
+                          <div id='notes9' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+<li>
+                  <div id='entry10' class='bib entry'>
+
+                    <a href='http://arxiv.org/abs/1610.02806v1' class='title'>Modelling Sentence Pairs with Tree-structured Attentive Encoder</a>
+                    <br><span class='author'>Yao Zhou, Cong Liu, Yan Pan.</span> <br>
+                    <span class='year'>2016</span><br>
+                    <div id='annotation10hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno10' class='bib annotation'>
+                          <div id='abstract10' class='bib abstract'><b>Abstract</b>
+                            We describe an attentive encoder that combines tree-structured recursive neural networks and sequential recurrent neural networks for modelling sentence pairs. Since existing attentive models exert attention on the sequential structure, we propose a way to incorporate attention into the tree topology. Specially, given a pair of sentences, our attentive encoder uses the representation of one sentence, which generated via an RNN, to guide the structural encoding of the other sentence on the dependency parse tree. We evaluate the proposed attentive encoder on three tasks: semantic similarity, paraphrase identification and true-false question selection. Experimental results show that our encoder outperforms all baselines and achieves state-of-the-art results on two tasks.</div>
+                          <div id='notes10' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+<li>
+                  <div id='entry11' class='bib entry'>
+
+                    <a href='http://arxiv.org/abs/1610.02891v2' class='title'>Personalizing a Dialogue System with Transfer Learning</a>
+                    <br><span class='author'>Kaixiang Mo, Shuangyin Li, Yu Zhang, Jiajun Li, Qiang Yang.</span> <br>
+                    <span class='year'>2016</span><br>
+                    <div id='annotation11hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno11' class='bib annotation'>
+                          <div id='abstract11' class='bib abstract'><b>Abstract</b>
+                            It is difficult to train a personalized task-oriented dialogue system because the data collected from each individual is often insufficient. Personalized dialogue systems trained on a small dataset can overfit and make it difficult to adapt to different user needs. One way to solve this problem is to consider a collection of multiple users' data as a source domain and an individual user's data as a target domain, and to perform a transfer learning from the source to the target domain. By following this idea, we propose "PETAL"(PErsonalized Task-oriented diALogue), a transfer-learning framework based on POMDP to learn a personalized dialogue system. The system first learns common dialogue knowledge from the source domain and then adapts this knowledge to the target user. This framework can avoid the negative transfer problem by considering differences between source and target users. The policy in the personalized POMDP can learn to choose different actions appropriately for different users. Experimental results on a real-world coffee-shopping data and simulation data show that our personalized dialogue system can choose different optimal actions for different users, and thus effectively improve the dialogue quality under the personalized setting.</div>
+                          <div id='notes11' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+<li>
+                  <div id='entry12' class='bib entry'>
+
+                    <a href='http://arxiv.org/abs/1311.3011v2' class='title'>Cornell SPF: Cornell Semantic Parsing Framework</a>
+                    <br><span class='author'>Yoav Artzi.</span> <br>
+                    <span class='year'>2013</span><br>
+                    <div id='annotation12hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno12' class='bib annotation'>
+                          <div id='abstract12' class='bib abstract'><b>Abstract</b>
+                            The Cornell Semantic Parsing Framework (SPF) is a learning and inference framework for mapping natural language to formal representation of its meaning.</div>
+                          <div id='notes12' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+<li>
+                  <div id='entry13' class='bib entry'>
+
+                    <a href='http://arxiv.org/abs/1609.05511v3' class='title'>Multilinear Grammar: Ranks and Interpretations</a>
+                    <br><span class='author'>Dafydd Gibbon, Sascha Griffiths.</span> <br>
+                    <span class='year'>2016</span><br>
+                    <div id='annotation13hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno13' class='bib annotation'>
+                          <div id='abstract13' class='bib abstract'><b>Abstract</b>
+                            Multilinear Grammar (MLG) is an approach to integrating the many different syntagmatic structures of language into a coherent architecture, the Rank-Interpretation Architecture. The architecture defines ranks from discourse structure through utterances, phrasal structures, word structures to speech sounds. Each rank has its own specific kind of prosodic-phonetic interpretation and semantic-pragmatic interpretation. Common to models of all these subdomains are models based on regular languages, and processors with finite working memory.</div>
+                          <div id='notes13' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+<li>
+                  <div id='entry14' class='bib entry'>
+
+                    <a href='http://arxiv.org/abs/1602.07776v3' class='title'>Recurrent Neural Network Grammars</a>
+                    <br><span class='author'>Chris Dyer, Adhiguna Kuncoro, Miguel Ballesteros, Noah A. Smith.</span> <br>
+                    <span class='year'>2016</span><br>
+                    <div id='annotation14hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno14' class='bib annotation'>
+                          <div id='abstract14' class='bib abstract'><b>Abstract</b>
+                            We introduce recurrent neural network grammars, probabilistic models of sentences with explicit phrase structure. We explain efficient inference procedures that allow application to both parsing and language modeling. Experiments show that they provide better parsing in English than any single previously published supervised generative model and better language modeling than state-of-the-art sequential RNNs in English and Chinese.</div>
+                          <div id='notes14' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+<li>
+                  <div id='entry15' class='bib entry'>
+
+                    <a href='http://arxiv.org/abs/1604.00562v2' class='title'>Reasoning About Pragmatics with Neural Listeners and Speakers</a>
+                    <br><span class='author'>Jacob Andreas, Dan Klein.</span> <br>
+                    <span class='year'>2016</span><br>
+                    <div id='annotation15hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno15' class='bib annotation'>
+                          <div id='abstract15' class='bib abstract'><b>Abstract</b>
+                            We present a model for pragmatically describing scenes, in which contrastive behavior results from a combination of inference-driven pragmatics and learned semantics. Like previous learned approaches to language generation, our model uses a simple feature-driven architecture (here a pair of neural "listener" and "speaker" models) to ground language in the world. Like inference-driven approaches to pragmatics, our model actively reasons about listener behavior when selecting utterances. For training, our approach requires only ordinary captions, annotated _without_ demonstration of the pragmatic behavior the model ultimately exhibits. In human evaluations on a referring expression game, our approach succeeds 81% of the time, compared to a 69% success rate using existing techniques.</div>
+                          <div id='notes15' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+<li>
+                  <div id='entry16' class='bib entry'>
+
+                    <a href='http://arxiv.org/abs/1609.08777v1' class='title'>Character Sequence Models for ColorfulWords</a>
+                    <br><span class='author'>Kazuya Kawakami, Chris Dyer, Bryan R. Routledge, Noah A. Smith.</span> <br>
+                    <span class='year'>2016</span><br>
+                    <div id='annotation16hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno16' class='bib annotation'>
+                          <div id='abstract16' class='bib abstract'><b>Abstract</b>
+                            We present a neural network architecture to predict a point in color space from the sequence of characters in the color's name. Using large scale color--name pairs obtained from an online color design forum, we evaluate our model on a "color Turing test" and find that, given a name, the colors predicted by our model are preferred by annotators to color names created by humans. Our datasets and demo system are available online at http://colorlab.us.</div>
+                          <div id='notes16' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+<li>
+                  <div id='entry17' class='bib entry'>
+
+                    <a href='http://arxiv.org/abs/1502.03044v3' class='title'>Show, Attend and Tell: Neural Image Caption Generation with Visual Attention</a>
+                    <br><span class='author'>Kelvin Xu, Jimmy Ba, Ryan Kiros, Kyunghyun Cho, Aaron Courville, Ruslan Salakhutdinov, Richard Zemel, Yoshua Bengio.</span> <br>
+                    <span class='year'>2015</span><br>
+                    <div id='annotation17hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno17' class='bib annotation'>
+                          <div id='abstract17' class='bib abstract'><b>Abstract</b>
+                            Inspired by recent work in machine translation and object detection, we introduce an attention based model that automatically learns to describe the content of images. We describe how we can train this model in a deterministic manner using standard backpropagation techniques and stochastically by maximizing a variational lower bound. We also show through visualization how the model is able to automatically learn to fix its gaze on salient objects while generating the corresponding words in the output sequence. We validate the use of attention with state-of-the-art performance on three benchmark datasets: Flickr8k, Flickr30k and MS COCO.</div>
+                          <div id='notes17' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+<li>
+                  <div id='entry18' class='bib entry'>
+
+                    <a href='http://arxiv.org/abs/1511.00060v3' class='title'>Top-down Tree Long Short-Term Memory Networks</a>
+                    <br><span class='author'>Xingxing Zhang, Liang Lu, Mirella Lapata.</span> <br>
+                    <span class='year'>2015</span><br>
+                    <div id='annotation18hider' class='bib no-selection btn'>hide annotations</div>
+                    <div id='anno18' class='bib annotation'>
+                          <div id='abstract18' class='bib abstract'><b>Abstract</b>
+                            Long Short-Term Memory (LSTM) networks, a type of recurrent neural network with a more complex computational unit, have been successfully applied to a variety of sequence modeling tasks. In this paper we develop Tree Long Short-Term Memory (TreeLSTM), a neural network model based on LSTM, which is designed to predict a tree rather than a linear sequence. TreeLSTM defines the probability of a sentence by estimating the generation probability of its dependency tree. At each time step, a node is generated based on the representation of the generated sub-tree. We further enhance the modeling power of TreeLSTM by explicitly representing the correlations between left and right dependents. Application of our model to the MSR sentence completion challenge achieves results beyond the current state of the art. We also report results on dependency parsing reranking achieving competitive performance.</div>
+                          <div id='notes18' class='bib notes'><b>Notes</b>
+                           Empty</div>
+                    </div>
+                  </div>
+                 </li>
+                
+</ul></div>
+
+
+<script>var options={valueNames:['title','author','year', 'abstract', 'notes']};
+var userList = new List('bibitems', options);</script><script>
+        var bibentry0on = true;
+        $('#annotation0hider').click(function() {
+            console.trace('here');
+            if (bibentry0on) {
+                $('#annotation0hider').html('show annotations');
+                $('#anno0.bib.annotation').css('display', 'none');
+                bibentry0on = false;
+            }
+            else {
+                $('#anno0.bib.annotation').css('display', 'inherit');
+                $('#annotation0hider').html("hide annotations");
+                bibentry0on = true;
+            }
+        });
+        $('#annotation0hider').click();</script>
+<script>
+        var bibentry1on = true;
+        $('#annotation1hider').click(function() {
+            console.trace('here');
+            if (bibentry1on) {
+                $('#annotation1hider').html('show annotations');
+                $('#anno1.bib.annotation').css('display', 'none');
+                bibentry1on = false;
+            }
+            else {
+                $('#anno1.bib.annotation').css('display', 'inherit');
+                $('#annotation1hider').html("hide annotations");
+                bibentry1on = true;
+            }
+        });
+        $('#annotation1hider').click();</script>
+<script>
+        var bibentry2on = true;
+        $('#annotation2hider').click(function() {
+            console.trace('here');
+            if (bibentry2on) {
+                $('#annotation2hider').html('show annotations');
+                $('#anno2.bib.annotation').css('display', 'none');
+                bibentry2on = false;
+            }
+            else {
+                $('#anno2.bib.annotation').css('display', 'inherit');
+                $('#annotation2hider').html("hide annotations");
+                bibentry2on = true;
+            }
+        });
+        $('#annotation2hider').click();</script>
+<script>
+        var bibentry3on = true;
+        $('#annotation3hider').click(function() {
+            console.trace('here');
+            if (bibentry3on) {
+                $('#annotation3hider').html('show annotations');
+                $('#anno3.bib.annotation').css('display', 'none');
+                bibentry3on = false;
+            }
+            else {
+                $('#anno3.bib.annotation').css('display', 'inherit');
+                $('#annotation3hider').html("hide annotations");
+                bibentry3on = true;
+            }
+        });
+        $('#annotation3hider').click();</script>
+<script>
+        var bibentry4on = true;
+        $('#annotation4hider').click(function() {
+            console.trace('here');
+            if (bibentry4on) {
+                $('#annotation4hider').html('show annotations');
+                $('#anno4.bib.annotation').css('display', 'none');
+                bibentry4on = false;
+            }
+            else {
+                $('#anno4.bib.annotation').css('display', 'inherit');
+                $('#annotation4hider').html("hide annotations");
+                bibentry4on = true;
+            }
+        });
+        $('#annotation4hider').click();</script>
+<script>
+        var bibentry5on = true;
+        $('#annotation5hider').click(function() {
+            console.trace('here');
+            if (bibentry5on) {
+                $('#annotation5hider').html('show annotations');
+                $('#anno5.bib.annotation').css('display', 'none');
+                bibentry5on = false;
+            }
+            else {
+                $('#anno5.bib.annotation').css('display', 'inherit');
+                $('#annotation5hider').html("hide annotations");
+                bibentry5on = true;
+            }
+        });
+        $('#annotation5hider').click();</script>
+<script>
+        var bibentry6on = true;
+        $('#annotation6hider').click(function() {
+            console.trace('here');
+            if (bibentry6on) {
+                $('#annotation6hider').html('show annotations');
+                $('#anno6.bib.annotation').css('display', 'none');
+                bibentry6on = false;
+            }
+            else {
+                $('#anno6.bib.annotation').css('display', 'inherit');
+                $('#annotation6hider').html("hide annotations");
+                bibentry6on = true;
+            }
+        });
+        $('#annotation6hider').click();</script>
+<script>
+        var bibentry7on = true;
+        $('#annotation7hider').click(function() {
+            console.trace('here');
+            if (bibentry7on) {
+                $('#annotation7hider').html('show annotations');
+                $('#anno7.bib.annotation').css('display', 'none');
+                bibentry7on = false;
+            }
+            else {
+                $('#anno7.bib.annotation').css('display', 'inherit');
+                $('#annotation7hider').html("hide annotations");
+                bibentry7on = true;
+            }
+        });
+        $('#annotation7hider').click();</script>
+<script>
+        var bibentry8on = true;
+        $('#annotation8hider').click(function() {
+            console.trace('here');
+            if (bibentry8on) {
+                $('#annotation8hider').html('show annotations');
+                $('#anno8.bib.annotation').css('display', 'none');
+                bibentry8on = false;
+            }
+            else {
+                $('#anno8.bib.annotation').css('display', 'inherit');
+                $('#annotation8hider').html("hide annotations");
+                bibentry8on = true;
+            }
+        });
+        $('#annotation8hider').click();</script>
+<script>
+        var bibentry9on = true;
+        $('#annotation9hider').click(function() {
+            console.trace('here');
+            if (bibentry9on) {
+                $('#annotation9hider').html('show annotations');
+                $('#anno9.bib.annotation').css('display', 'none');
+                bibentry9on = false;
+            }
+            else {
+                $('#anno9.bib.annotation').css('display', 'inherit');
+                $('#annotation9hider').html("hide annotations");
+                bibentry9on = true;
+            }
+        });
+        $('#annotation9hider').click();</script>
+<script>
+        var bibentry10on = true;
+        $('#annotation10hider').click(function() {
+            console.trace('here');
+            if (bibentry10on) {
+                $('#annotation10hider').html('show annotations');
+                $('#anno10.bib.annotation').css('display', 'none');
+                bibentry10on = false;
+            }
+            else {
+                $('#anno10.bib.annotation').css('display', 'inherit');
+                $('#annotation10hider').html("hide annotations");
+                bibentry10on = true;
+            }
+        });
+        $('#annotation10hider').click();</script>
+<script>
+        var bibentry11on = true;
+        $('#annotation11hider').click(function() {
+            console.trace('here');
+            if (bibentry11on) {
+                $('#annotation11hider').html('show annotations');
+                $('#anno11.bib.annotation').css('display', 'none');
+                bibentry11on = false;
+            }
+            else {
+                $('#anno11.bib.annotation').css('display', 'inherit');
+                $('#annotation11hider').html("hide annotations");
+                bibentry11on = true;
+            }
+        });
+        $('#annotation11hider').click();</script>
+<script>
+        var bibentry12on = true;
+        $('#annotation12hider').click(function() {
+            console.trace('here');
+            if (bibentry12on) {
+                $('#annotation12hider').html('show annotations');
+                $('#anno12.bib.annotation').css('display', 'none');
+                bibentry12on = false;
+            }
+            else {
+                $('#anno12.bib.annotation').css('display', 'inherit');
+                $('#annotation12hider').html("hide annotations");
+                bibentry12on = true;
+            }
+        });
+        $('#annotation12hider').click();</script>
+<script>
+        var bibentry13on = true;
+        $('#annotation13hider').click(function() {
+            console.trace('here');
+            if (bibentry13on) {
+                $('#annotation13hider').html('show annotations');
+                $('#anno13.bib.annotation').css('display', 'none');
+                bibentry13on = false;
+            }
+            else {
+                $('#anno13.bib.annotation').css('display', 'inherit');
+                $('#annotation13hider').html("hide annotations");
+                bibentry13on = true;
+            }
+        });
+        $('#annotation13hider').click();</script>
+<script>
+        var bibentry14on = true;
+        $('#annotation14hider').click(function() {
+            console.trace('here');
+            if (bibentry14on) {
+                $('#annotation14hider').html('show annotations');
+                $('#anno14.bib.annotation').css('display', 'none');
+                bibentry14on = false;
+            }
+            else {
+                $('#anno14.bib.annotation').css('display', 'inherit');
+                $('#annotation14hider').html("hide annotations");
+                bibentry14on = true;
+            }
+        });
+        $('#annotation14hider').click();</script>
+<script>
+        var bibentry15on = true;
+        $('#annotation15hider').click(function() {
+            console.trace('here');
+            if (bibentry15on) {
+                $('#annotation15hider').html('show annotations');
+                $('#anno15.bib.annotation').css('display', 'none');
+                bibentry15on = false;
+            }
+            else {
+                $('#anno15.bib.annotation').css('display', 'inherit');
+                $('#annotation15hider').html("hide annotations");
+                bibentry15on = true;
+            }
+        });
+        $('#annotation15hider').click();</script>
+<script>
+        var bibentry16on = true;
+        $('#annotation16hider').click(function() {
+            console.trace('here');
+            if (bibentry16on) {
+                $('#annotation16hider').html('show annotations');
+                $('#anno16.bib.annotation').css('display', 'none');
+                bibentry16on = false;
+            }
+            else {
+                $('#anno16.bib.annotation').css('display', 'inherit');
+                $('#annotation16hider').html("hide annotations");
+                bibentry16on = true;
+            }
+        });
+        $('#annotation16hider').click();</script>
+<script>
+        var bibentry17on = true;
+        $('#annotation17hider').click(function() {
+            console.trace('here');
+            if (bibentry17on) {
+                $('#annotation17hider').html('show annotations');
+                $('#anno17.bib.annotation').css('display', 'none');
+                bibentry17on = false;
+            }
+            else {
+                $('#anno17.bib.annotation').css('display', 'inherit');
+                $('#annotation17hider').html("hide annotations");
+                bibentry17on = true;
+            }
+        });
+        $('#annotation17hider').click();</script>
+<script>
+        var bibentry18on = true;
+        $('#annotation18hider').click(function() {
+            console.trace('here');
+            if (bibentry18on) {
+                $('#annotation18hider').html('show annotations');
+                $('#anno18.bib.annotation').css('display', 'none');
+                bibentry18on = false;
+            }
+            else {
+                $('#anno18.bib.annotation').css('display', 'inherit');
+                $('#annotation18hider').html("hide annotations");
+                bibentry18on = true;
+            }
+        });
+        $('#annotation18hider').click();</script>
+<script> var allshowing=false; 
+function hideall() { 
+allshowing=false;bibentry0on = true; $('#annotation0hider').click();
+bibentry1on = true; $('#annotation1hider').click();
+bibentry2on = true; $('#annotation2hider').click();
+bibentry3on = true; $('#annotation3hider').click();
+bibentry4on = true; $('#annotation4hider').click();
+bibentry5on = true; $('#annotation5hider').click();
+bibentry6on = true; $('#annotation6hider').click();
+bibentry7on = true; $('#annotation7hider').click();
+bibentry8on = true; $('#annotation8hider').click();
+bibentry9on = true; $('#annotation9hider').click();
+bibentry10on = true; $('#annotation10hider').click();
+bibentry11on = true; $('#annotation11hider').click();
+bibentry12on = true; $('#annotation12hider').click();
+bibentry13on = true; $('#annotation13hider').click();
+bibentry14on = true; $('#annotation14hider').click();
+bibentry15on = true; $('#annotation15hider').click();
+bibentry16on = true; $('#annotation16hider').click();
+bibentry17on = true; $('#annotation17hider').click();
+bibentry18on = true; $('#annotation18hider').click();
+}
+function showall() { 
+allshowing=true;
+bibentry0on = false; $('#annotation0hider').click();
+bibentry1on = false; $('#annotation1hider').click();
+bibentry2on = false; $('#annotation2hider').click();
+bibentry3on = false; $('#annotation3hider').click();
+bibentry4on = false; $('#annotation4hider').click();
+bibentry5on = false; $('#annotation5hider').click();
+bibentry6on = false; $('#annotation6hider').click();
+bibentry7on = false; $('#annotation7hider').click();
+bibentry8on = false; $('#annotation8hider').click();
+bibentry9on = false; $('#annotation9hider').click();
+bibentry10on = false; $('#annotation10hider').click();
+bibentry11on = false; $('#annotation11hider').click();
+bibentry12on = false; $('#annotation12hider').click();
+bibentry13on = false; $('#annotation13hider').click();
+bibentry14on = false; $('#annotation14hider').click();
+bibentry15on = false; $('#annotation15hider').click();
+bibentry16on = false; $('#annotation16hider').click();
+bibentry17on = false; $('#annotation17hider').click();
+bibentry18on = false; $('#annotation18hider').click();
+}
+$('#showhide').click(function() {if (allshowing) { hideall(); $('#showhide').html('Expand all annoations');}else { showall(); $('#showhide').html('Hide all annoations');}});</script>
